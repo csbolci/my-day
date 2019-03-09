@@ -162,7 +162,7 @@ function calculate(latitude, longitude, isSunrise, zenith, date) {
  * @param {Date} [date]
  * @returns {Date}
  */
-export function getSunrise(latitude, longitude, date = new Date()) {
+function getSunrise(latitude, longitude, date = new Date()) {
   return calculate(latitude, longitude, true, DEFAULT_ZENITH, date);
 };
 
@@ -174,6 +174,6 @@ export function getSunrise(latitude, longitude, date = new Date()) {
  * @param {Date} [date]
  * @returns {Date}
  */
-export function getSunset(latitude, longitude, date = new Date()) {
+function getSunset(latitude, longitude, date = new Date()) {
   return calculate(latitude, longitude, false, DEFAULT_ZENITH, date);
 };
