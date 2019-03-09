@@ -1,0 +1,122 @@
+#star-five {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    display: block;
+    color: white;
+    opacity: 0.5;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid white;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+  }
+  #star-five:before {
+    border-bottom: 80px solid white;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  #star-five:after {
+    position: absolute;
+    display: block;
+    color: white;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid white;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+
+a{
+  text-decoration: none;
+  color: bisque;
+}
+a:hover{
+  color: whitesmoke;
+}
+  .container{
+      border: 2px solid bisque;
+      width:auto;
+      margin: 50px;
+      padding: 40px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      border-radius: 3% 30% 29% 70%;
+  }
+  
+
+  .container-contact{
+    border: 2px solid bisque;
+    width:auto;
+    margin: 50px;
+    padding: 20px 15px ;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 30% 30% 30% 30%;
+}
+
+  .hover-text{
+    border: 2px solid bisque;
+      width: auto;
+      margin: 50px;
+      padding: 4% ;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      border-radius: 50%;
+      box-shadow: 0 60px 1px 6px whitesmoke, 0 0 150px 10px darkorange;
+  }
+  /*background animation --------------------->*/
+  
+  
+  body{
+    background-color: #6495ED;
+    color: whitesmoke;
+    opacity: .7;
+    font-family: 'Comfortaa', cursive;    
+    animation-name: color;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease;
+  }
+  
+  @keyframes color {
+    0% {
+      background-color: #a9c4f5;
+    }
+    50% {
+      background-color: #6495ED;
+    }
+    75%{
+      background-color: #2e48e3;
+    }
+    90%{
+      background-color:#c0c8f6; 
+    }
+    100%{
+      background-color: #a9c4f5;
+    }
+  }
+  
+  
+  
+
+
+.contact { background-color:#fff; }
